@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <!-- <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li> -->
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <!-- <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div> -->
+      </li>
+
+      
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <!-- <a href="#" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Admin</span>
+    </a> -->
+<!-- Brand Logo -->
+ <br>
+<div class="text-center mt-2">
+    <img src="dist/img/AdminLTELogo.png" class="brand-image img-circle elevation-3" alt="Logo" style="opacity: .8" width="100" />
+</div>
+<br>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div style="display: flex; justify-content: center; align-items: center;">
+
+        <div class="user-panel">
+    
+            <span style="color: white; opacity: 0.8; font-size: 1.3em; text-align: center;" class="brand-text font-weight-light">
+                Zenith Solutions
+            </span>
+    
+        </div>
+    </div>
+    <br />
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <source>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>
+                        Dashboard
+                    </p>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-tasks"></i>
+                    <p>
+                        Projects
+                    </p>
+                </a>
+                <!-- <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="projects_list.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Project List</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects_add.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Add Project</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects_status.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Project Status</p>
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+    
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        Developers
+                    </p>
+                </a>
+                <!-- <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="developers_list.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Developer List</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="developers_add.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Add Developer</p>
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+    
+            <li class="nav-item">
+                <a href="accounting.html" class="nav-link">
+                    <i class="nav-icon fas fa-dollar-sign"></i>
+                    <p>
+                        Accounting
+                        <!-- <i class="right fas fa-angle-left"></i> -->
+                    </p>
+                </a>
+                <!-- <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="payments_list.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Payments</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="payments_add.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Add Payment</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="invoices.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Invoices</p>
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+    
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-cogs"></i>
+                    <p>
+                        Settings
+                        
+                    </p>
+                </a>
+                <!-- <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="roles.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Roles & Permissions</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="company_profile.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Company Profile</p>
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+          </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Admin Dashboard</h1>
+                </div></div></div></div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-light">
+                        <div class="inner">
+                            <h3 id="totalProjects">0</h3>
+                            <p>Total Projects</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <a href="projects_list.html" class="small-box-footer">View Projects <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-success">
+                        <div class="inner">
+                            <h3 id="completedPayments">$ 0</h3>
+                            <p>Completed Payments</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <a href="payments_list.html" class="small-box-footer">View Payments <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-danger">
+                        <div class="inner">
+                          <h3 id="pendingPayments">$ 0</h3>
+                          <p>Pending Payments</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <a href="payments_list.html" class="small-box-footer">View Payments <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                  <div class="small-box bg-light">
+                      <div class="inner">
+                          <h3 id="activeDevelopers">0</h3>
+                          <p>Active Developers</p>
+                      </div>
+                      <div class="icon">
+                          <i class="fas fa-users"></i>
+                      </div>
+                      <a href="developers_list.html" class="small-box-footer">View Developers <i class="fas fa-arrow-circle-right"></i></a>
+                  </div>
+              </div>
+                
+                </div>
+            <div class="row">
+                <section class="col-lg-7 connectedSortable">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-chart-pie mr-1"></i>
+                                Project Status
+                            </h3>
+                            <div class="card-tools">
+                                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                                </ul>
+                            </div>
+                        </div><div class="card-body">
+                            <canvas id="projectStatusChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                        </div></div>
+                    </section>
+                
+                </div>
+            </div></section>
+    </div>
+
+    <script>
+        function updateDashboardData() {
+    let pendingPayments = localStorage.getItem('pendingPayments');
+    let completedPayments = localStorage.getItem('completedPayments');
+
+    console.log(localStorage.getItem('pendingPayments'), localStorage.getItem('completedPayments')); //Add this line
+
+    if (pendingPayments === null) pendingPayments = 10;
+    if (completedPayments === null) completedPayments = 30;
+
+    document.getElementById("totalProjects").textContent = 50;
+    document.getElementById("activeDevelopers").textContent = 25;
+    document.getElementById("pendingPayments").textContent = "$ " + pendingPayments;
+    document.getElementById("completedPayments").textContent = "$ " + completedPayments;
+
+    // Update Chart
+    projectStatusChart.data.datasets[0].data = [30, 15, 5];
+    projectStatusChart.update();
+}
+//in index.html
+window.addEventListener('paymentsUpdated', function() {
+    console.log('paymentsUpdated event received'); //add this line
+    updateDashboardData();
+});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dist/js/accounting.js"></script>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; <a target="_blank" href="https://zenithsolutions.tech">Zenith Solutions</a></strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>
